@@ -25,11 +25,11 @@ class Queue{
             std:: cout << "Queue is full";
         }
         else {
-            if (front == -1 ) front = 0;
+            if (front == -1) front = 0; 
             rear ++;
-            items[rear] == element;
+            items[rear] = element;
             std:: cout<< std::endl;
-            std:: cout<<"Insert element" <<element <<"in Queue";
+            std:: cout<<"Insert element " <<element <<" in Queue";
         }
     }
     int deQueue(){
@@ -53,6 +53,7 @@ class Queue{
     }
     void Display(){
         if (isEmpty()){
+            std::cout<<std::endl;
             std:: cout<< "Empty Queue"<<std::endl;
         }
         else {
